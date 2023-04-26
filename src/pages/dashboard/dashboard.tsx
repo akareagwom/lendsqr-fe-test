@@ -28,7 +28,7 @@ const Dashboard = () => {
                         <input type="email" placeholder='Email' name="" id="" />
                         <input type="password" placeholder='Password' name="" id="" />
                     </form>
-                    <Link to=''>FORGOT PASSWORD?</Link>
+                    <Link className='link' to=''>FORGOT PASSWORD?</Link>
                     <button>LOG IN</button>
                 </div>
             </div>
