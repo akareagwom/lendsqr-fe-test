@@ -1,0 +1,72 @@
+$font-stack: Avenir Next;
+$primary-color: #213F7D;
+
+.landingPage{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    width: 50%;
+    .head {
+        font: 100% $font-stack;
+        color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        padding-left: 10%,;
+      }
+    .image-container{
+        padding: 5%;
+    }  
+    .pablo{
+        width: 100%;
+    }  
+}
+.form{
+    .form-container{
+        margin-left: 20%;
+        margin-right: 0%;
+        margin-top: 15%;
+        margin-bottom: 0%;
+    }
+    width: 50%;
+    background-color: #FFFF;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+    h1{
+        color: $primary-color;
+        
+    }
+    form{
+        display: block;
+        
+        input{
+            width: 70%;
+            padding: 1.5%;
+            outline: none;
+            border: 1px solid #545F7D;
+            border-radius: 5px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+    }
+    .link{
+        margin-top: 25%;
+        color: #39CDCC;
+        text-decoration: none;
+    }
+    button{
+        background-color: #39CDCC;
+        outline: none;
+        border: none;
+        width: 74%;
+        padding: 1.5%;
+        border-radius: 5px;
+        margin-top: 3%;
+        cursor: pointer;
+        color: #FFFFFF;
+        
+    }
+}
+
