@@ -1,11 +1,28 @@
 $font-stack: Avenir Next;
 $primary-color: #213F7D;
 
-.nav-head{
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .nav-head{
         font: 100% $font-stack;
         color: $primary-color;
         display: flex;
         justify-content: space-between;
         width: 15%;
         
+}
+    .persona{
+        display: flex;
+        justify-content: space-between;
+        .profile{
+            display: flex;
+            img{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
