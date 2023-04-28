@@ -1,10 +1,15 @@
 import './drawer.scss'
-
+import {IoChevronDownSharp,IoBriefcase} from 'react-icons/io5'
 const Drawer = () => {
     return ( 
         <>
             <div className='drawer'>
-                <h5>Switch Organization</h5>
+                
+                <h5>
+                    <IoBriefcase className='IoBriefcase'/>
+                    Switch Organization
+                    <IoChevronDownSharp/>
+                </h5>
                 <h5>Dashboard</h5>
                 <div>
                 <h5>Customers</h5>
@@ -34,6 +39,15 @@ const Drawer = () => {
                 <li>Settlements</li>
                 <li>Reports</li>
                 </ul>
+                </div>
+
+                <div>
+                    <h5>Settings</h5>
+                    <ul>
+                        <li>Prefrences</li>
+                        <li>Fees and Pricing</li>
+                        <li>Audit Logs</li>
+                    </ul>
                 </div>
                 
                 
