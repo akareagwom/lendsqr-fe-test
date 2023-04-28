@@ -4,8 +4,14 @@ import Navbar from "../../components/navbar/navbar";
 const Dashboard = () => {
     return ( 
         <>
-        <Navbar/>
-        <Drawer/>
+        <div className="dash-naV">
+            <Navbar/>
+        </div>
+        <div className="dash-drawer">
+            <Drawer/>   
+        </div>
+
+
         </>
      );
 }

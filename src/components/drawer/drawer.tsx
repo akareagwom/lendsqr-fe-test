@@ -5,11 +5,11 @@ const Drawer = () => {
         <>
             <div className='drawer'>
                 
-                <h5>
+                <div className='drawer-head'>
                     <IoBriefcase className='IoBriefcase'/>
-                    Switch Organization
+                    <h5>Switch Organization</h5>
                     <IoChevronDownSharp/>
-                </h5>
+                </div>
                 <h5>Dashboard</h5>
                 <div>
                 <h5>Customers</h5>
