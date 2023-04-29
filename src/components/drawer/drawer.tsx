@@ -1,5 +1,9 @@
 import './drawer.scss'
 import {IoChevronDownSharp,IoBriefcase} from 'react-icons/io5'
+import {FaHome,FaPiggyBank,FaHandHoldingUsd,FaRegHandshake,} from 'react-icons/fa'
+// import {FiUsers,FiUserCheck,FiUserX} from 'react-icons/fi'
+// RiUserSettingsFill
+
 const Drawer = () => {
     return ( 
         <>
@@ -10,15 +14,16 @@ const Drawer = () => {
                     <h5>Switch Organization</h5>
                     <IoChevronDownSharp/>
                 </div>
+                <FaHome/>       
                 <h5>Dashboard</h5>
                 <div>
                 <h5>Customers</h5>
                 <ul>
                 <li>Users</li>
                 <li>Guarantors</li>
-                <li>Loans</li>
-                <li>Descision Models</li>
-                <li>Savings</li>
+                <FaHandHoldingUsd/><li>Loans</li>
+                <FaRegHandshake/><li>Descision Models</li>
+                <FaPiggyBank/><li>Savings</li>
                 <li>Loan Request</li>
                 <li>White List</li>
                 <li>Karma</li>
