@@ -1,8 +1,12 @@
 import './drawer.scss'
-import {IoChevronDownSharp,IoBriefcase} from 'react-icons/io5'
-import {FaHome,FaPiggyBank,FaHandHoldingUsd,FaRegHandshake,} from 'react-icons/fa'
-// import {FiUsers,FiUserCheck,FiUserX} from 'react-icons/fi'
-// RiUserSettingsFill
+import {IoChevronDownSharp,IoBriefcase,IoBarChartSharp} from 'react-icons/io5'
+import {FaHome,FaPiggyBank,FaHandHoldingUsd,FaRegHandshake,FaUsers,FaCoins,FaClipboardList} from 'react-icons/fa'
+import {FiUsers,FiUserCheck,FiUserX} from 'react-icons/fi'
+import {AiOutlineBank} from 'react-icons/ai'
+import {BsPhoneFlip} from 'react-icons/bs'
+import {BiAbacus} from 'react-icons/bi'
+import {TbWindmillFilled,TbDiscount2} from 'react-icons/tb'
+import { RiUserSettingsFill,RiFilePaper2Fill} from 'react-icons/ri'
 
 const Drawer = () => {
     return ( 
@@ -19,14 +23,14 @@ const Drawer = () => {
                 <div>
                 <h5>Customers</h5>
                 <ul>
-                <li>Users</li>
-                <li>Guarantors</li>
-                <FaHandHoldingUsd/><li>Loans</li>
-                <FaRegHandshake/><li>Descision Models</li>
-                <FaPiggyBank/><li>Savings</li>
-                <li>Loan Request</li>
-                <li>White List</li>
-                <li>Karma</li>
+                <li><FiUsers/> Users</li>
+                <li><FaUsers/>Guarantors</li>
+                <li><FaHandHoldingUsd/>Loans</li>
+                <li><FaRegHandshake/>Descision Models</li>
+                <li><FaPiggyBank/>Savings</li>
+                <li><FaHandHoldingUsd/>Loan Request</li>
+                <li><FiUserCheck/>White List</li>
+                <li><FiUserX/>Karma</li>
                 
                 </ul>
                 </div>
@@ -34,24 +38,24 @@ const Drawer = () => {
                 <div>
                 <h5>Businesses</h5>
                 <ul>
-                <li>Organisation</li>
-                <li>Loan Products</li>
-                <li>Savings Products</li>
-                <li>Fees and Charges</li>
-                <li>Transactions</li>
-                <li>Services</li>
-                <li>Services Account</li>
-                <li>Settlements</li>
-                <li>Reports</li>
+                <li><IoBriefcase/>Organisation</li>
+                <li><FaHandHoldingUsd/>Loan Products</li>
+                <li><AiOutlineBank/>Savings Products</li>
+                <li><FaCoins/>Fees and Charges</li>
+                <li><BsPhoneFlip/>Transactions</li>
+                <li><TbWindmillFilled/>Services</li>
+                <li><RiUserSettingsFill/>Services Account</li>
+                <li><RiFilePaper2Fill/>Settlements</li>
+                <li><IoBarChartSharp/>Reports</li>
                 </ul>
                 </div>
 
                 <div>
                     <h5>Settings</h5>
                     <ul>
-                        <li>Prefrences</li>
-                        <li>Fees and Pricing</li>
-                        <li>Audit Logs</li>
+                        <li><BiAbacus/>Prefrences</li>
+                        <li><TbDiscount2/>Fees and Pricing</li>
+                        <li><FaClipboardList/>Audit Logs</li>
                     </ul>
                 </div>
                 
