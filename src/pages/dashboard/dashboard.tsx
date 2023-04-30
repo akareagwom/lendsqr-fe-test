@@ -7,7 +7,7 @@ import{useState,useEffect} from 'react'
 
 const Dashboard = () => {
 
-    const URL = 'https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users'
+    // const URL = 'https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users'
     const [users, setUsers] = useState([])
     const [error, setError] = useState({})
 
@@ -21,7 +21,7 @@ const Dashboard = () => {
     }
 
     const fetchUserData = () => {
-      fetch(URL)
+      fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
         .then(response => response.json()
         )
         .then(res => setUsers(res.slice(0,20)))
