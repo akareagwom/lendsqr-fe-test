@@ -14,8 +14,8 @@ const Drawer = () => {
                     <h5>Switch Organization</h5>
                     <IoChevronDownSharp/>
                 </div>
-                <FaHome/>       
-                <h5>Dashboard</h5>
+                       
+                <h5><FaHome/>Dashboard</h5>
                 <div>
                 <h5>Customers</h5>
                 <ul>

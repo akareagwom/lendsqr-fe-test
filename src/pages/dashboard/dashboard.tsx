@@ -24,11 +24,8 @@ const Dashboard = () => {
       fetch(URL)
         .then(response => response.json()
         )
-        .then(res => setUsers(res))
+        .then(res => setUsers(res.slice(0,20)))
         .catch(err => setError(err))
-        // .then(data => {
-        //   setUsers(data)
-        // })
     }
     useEffect(() => {
         return fetchUserData()
@@ -41,41 +38,49 @@ const Dashboard = () => {
         <div className="dash-drawer">
             <Drawer/>   
         </div>
-        <div className="tabs">
-            <div className="tab1">
-                <SlPeople className="tabs1" />
-            </div>
-            <div>hla</div>
-            <div>hla</div>
-        </div>
-        {/* {users.length > 0 ? users.map((user: User) => console.log(user.phoneNumber)):('loading')} */}
-      {users.length > 0 &&(
-        <table>
-            <tr>
-                <th>ORGANIZATION</th>
-                <th>USERNAME</th>
-                <th>EMAIL</th>
-                <th>PHONE NUMBER</th>
-                <th>DATE JOINED</th>
-                <th>STATUS</th>
-            </tr>
-            {users.map((user:User)=>(
-                <tr key={user.createdAt}>
-                <td>{user.orgName}</td>
-                <td>{user.userName}</td>
-                <td>{user.email}</td>
-                <td>{user.phoneNumber}</td>
-                <td>{user.createdAt}</td>
-                <td>{user.lastActiveDate}</td>
-               </tr>
-            ))
-       
+        <div className="users">
+            <h2>Users</h2>
+            <div className="tabs">
+                    <div className="tab1">
+                        <SlPeople className="tabs1" />
+                    </div>
+                    <div>
+                    <SlPeople className="tabs1" />
+                    </div>
+                    <div>
+                    <SlPeople className="tabs1" />
+                    </div>
+                </div>
+                
+                {users.length > 0 &&(
+                <table>
+                    <tr>
+                        <th>ORGANIZATION</th>
+                        <th>USERNAME</th>
+                        <th>EMAIL</th>
+                        <th>PHONE NUMBER</th>
+                        <th>DATE JOINED</th>
+                        <th>STATUS</th>
+                    </tr>
+                    {users.map((user:User)=>(
+                        <tr key={user.createdAt}>
+                        <td>{user.orgName}</td>
+                        <td>{user.userName}</td>
+                        <td>{user.email}</td>
+                        <td>{user.phoneNumber}</td>
+                        <td>{user.createdAt}</td>
+                        <td>{user.lastActiveDate}</td>
+                    </tr>
+                    ))
             
-        
+                    
+                
 
-        }
-        </table>
-      )}  
+                }
+                </table>
+            )} 
+        </div>
+   
        
 
 
