@@ -43,12 +43,18 @@ const Dashboard = () => {
             <div className="tabs">
                     <div className="tab1">
                         <SlPeople className="tabs1" />
+                        <h4>users</h4>
+                        <h2>23456</h2>
                     </div>
-                    <div>
+                    <div className="tab1">
                     <SlPeople className="tabs1" />
+                    <h4>users</h4>
+                    <h2>23456</h2>
                     </div>
-                    <div>
+                    <div className="tab1">
                     <SlPeople className="tabs1" />
+                    <h4>users</h4>
+                    <h2>23456</h2>
                     </div>
                 </div>
                 

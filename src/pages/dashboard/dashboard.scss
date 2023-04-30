@@ -8,14 +8,21 @@
 }
 .tabs{
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 2%;
 }
 .tabs1{
         background: #DF18FF;
         opacity: 20%;
+        border-radius: 50%;
 }
 .tab1{
     // background: #DF18FF;
+    width: 30%;
+    line-height: 5%;
     color: #5403619a;
+    box-shadow: 0px 0px 1px rgb(92, 92, 94)
     // opacity: 20%;
 }
 .users{
