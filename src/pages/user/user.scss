@@ -1,0 +1,13 @@
+.user-container{
+    // color: aquamarine;
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 15%;
+    .user-head{
+        display: flex;
+        justify-content:space-between ;
+        width: 90%;
+        align-items: baseline;
+    }
+}
