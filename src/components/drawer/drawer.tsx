@@ -5,7 +5,7 @@ import {FiUsers,FiUserCheck,FiUserX} from 'react-icons/fi'
 import {AiOutlineBank} from 'react-icons/ai'
 import {BsPhoneFlip} from 'react-icons/bs'
 import {BiAbacus} from 'react-icons/bi'
-import {TbWindmillFilled,TbDiscount2} from 'react-icons/tb'
+import {TbWindmillFilled,TbDiscount2,} from 'react-icons/tb'
 import { RiUserSettingsFill,RiFilePaper2Fill} from 'react-icons/ri'
 
 const Drawer = () => {

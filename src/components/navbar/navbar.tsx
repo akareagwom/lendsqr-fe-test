@@ -1,9 +1,11 @@
 import logo from '../../assets/Union.svg'
 import './navbar.scss'
 import {
-    IoMdNotificationsOutline,} from 'react-icons/io'
+    IoMdNotificationsOutline,
+    IoIosSearch
+} from 'react-icons/io'
 import {AiOutlineCaretDown} from 'react-icons/ai'    
-    //  IoSearchOutline,
+    
     
 const Navbar = () => {
     return (  
@@ -15,6 +17,7 @@ const Navbar = () => {
             </div>
             <div className='input'>
                 <input type="search" name="" placeholder='search' id="" />
+                <IoIosSearch className='search-icon'/>
             </div>
             <div className='persona'>
                 <h5>Docs</h5>
