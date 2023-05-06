@@ -27,13 +27,22 @@ $primary-color: #213F7D;
     .input{
         width: 33%;
         margin: 2%;
+
         input{
             width: 83%;
+            padding: 1.5%;
             outline: none;
+            border-radius: 3px;
+            border: 0.5px solid;
         }
         .search-icon{
             background-color: #39CDCC;
             color: white;
+            position: absolute;
+            left:54%;
+            top: 4.2%;
+            padding: 0.5%;
+            // width: 1.5%;
         }
     }
     .persona{

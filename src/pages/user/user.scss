@@ -60,18 +60,19 @@
                 border-right: 1px solid #545F7D;
                 padding: 3%;
                 line-height: 2%;
-                
+
                 p{
                     font-size: 13px;
                 }
                 
             }
         }
-        img{
+        .img{
             border-radius: 50%;
             width: 68px;
             height: 68px;
             margin: 5%;
+            background: rgb(185, 182, 182);
         }
     }
 }

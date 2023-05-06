@@ -1,4 +1,4 @@
-import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowLeft,BsFillPersonFill } from "react-icons/bs";
 import Drawer from "../../components/drawer/drawer";
 import Navbar from "../../components/navbar/navbar";
 import './user.scss'
@@ -21,7 +21,7 @@ const User = () => {
             </div>
             <div className="user-first">
                 <div className="content">
-                    <img src="profile.png" alt="" />
+                    <BsFillPersonFill className="img"/>
                     <div className="user-flex">
                         <div className="bla">
                             <h5>Grace Effiom</h5>
@@ -60,7 +60,7 @@ const User = () => {
 
                 </div>
                 <footer>
-                    
+
                 </footer>
             </div>
         </div>
