@@ -60,6 +60,9 @@
                 border-right: 1px solid #545F7D;
                 padding: 3%;
                 line-height: 2%;
+                h5{
+                    color: #213F7D;
+                }
 
                 p{
                     font-size: 13px;
@@ -73,6 +76,12 @@
             height: 68px;
             margin: 5%;
             background: rgb(185, 182, 182);
+        }
+    }
+    .info{
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        h4{
+            font-weight: 300;
         }
     }
 }

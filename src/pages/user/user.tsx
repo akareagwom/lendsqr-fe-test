@@ -1,13 +1,16 @@
 import { BsArrowLeft,BsFillPersonFill } from "react-icons/bs";
-import Drawer from "../../components/drawer/drawer";
-import Navbar from "../../components/navbar/navbar";
+// import Drawer from "../../components/drawer/drawer";
+// import Navbar from "../../components/navbar/navbar";
+import Layout from "../../components/Layout/layout";
+
 import './user.scss'
 
 const User = () => {
     return ( 
         <>
-        <Navbar/>
-        <Drawer/>
+        <Layout>
+        {/* <Navbar/>
+        <Drawer/> */}
         <div className="user-container">
             <div className="back">
             <p><BsArrowLeft/> Back to Users</p>
@@ -47,23 +50,25 @@ const User = () => {
                 </ul>
             </div>
             <div className="info">
-                <div className="personal-info">
 
+                <div className="personal-info">
+                    <h4>Personal Information</h4>
                 </div>
                 <div className="edu-info">
-
+                <h4>Education and Employment</h4>
                 </div>
                 <div className="socials-info">
-
+                    <h4>Socials</h4>
                 </div>
                 <div className="guarantor-info">
-
+                    <h4>Guarantor</h4>
                 </div>
                 <footer>
 
                 </footer>
             </div>
         </div>
+        </Layout>
         </>
      );
 }
