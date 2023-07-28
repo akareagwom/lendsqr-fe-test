@@ -1,5 +1,4 @@
-import Drawer from "../../components/drawer/drawer";
-import Navbar from "../../components/navbar/navbar";
+import Layout from "../../components/Layout/layout";
 import './dashboard.scss'
 import {SlPeople} from 'react-icons/sl'
 import{useState,useEffect} from 'react'
@@ -32,12 +31,7 @@ const Dashboard = () => {
       }, [])
     return ( 
         <>
-        <div className="dash-naV">
-            <Navbar/>
-        </div>
-        <div className="dash-drawer">
-            <Drawer/>   
-        </div>
+       <Layout>
         <div className="users">
             <h2>Users</h2>
             <div className="tabs">
@@ -88,7 +82,7 @@ const Dashboard = () => {
         </div>
    
        
-
+        </Layout>
 
         </>
      );
