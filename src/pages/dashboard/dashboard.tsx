@@ -17,7 +17,15 @@ const Dashboard = () => {
         phoneNumber: string;
         createdAt: string;
         lastActiveDate: string;
+        start: number;
+        end: number;
     }
+    function test ({start,end}:User){
+        return (start + end);
+        // test(4)
+    }
+   
+    console.log(test)
 
     const fetchUserData = () => {
       fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
