@@ -25,6 +25,8 @@ export const usePagination = ({
             return Array.from({length},(_,idx)=>idx+start);
     
         }
+        const totalPageNumbers= siblingCount +5;
         
+
 
 }
