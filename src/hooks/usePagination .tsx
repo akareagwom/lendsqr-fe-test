@@ -25,13 +25,24 @@ export const usePagination = ({
             let length= end-start+1;
             return Array.from({length},(_,idx)=>idx+start);
     
-        }
+        };
         const totalPageNumbers= siblingCount +5;
 
         if (totalPageNumbers >= totalPageCount){
             return range(1,totalPageCount);
 
-        }
+        };
+        //left & right siblingIndex Calculations 
+        const leftSiblingIndex = Math.max(currentPage-siblingCount,1);
+        const rightSiblingIndex = Math.min(currentPage+siblingCount,totalPageCount);
+
+        //show dots
+        const shouldShowLeftDots = leftSiblingIndex > 2;
+
+
+
+
+        return paginationRange;
 
 
 }
